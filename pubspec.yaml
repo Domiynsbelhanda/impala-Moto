@@ -12,16 +12,76 @@ dependencies:
 
 
   cupertino_icons: ^1.0.2
-  provider: ^6.0.5
-  dio: ^5.3.2
+  intl:
+  flutter_verification_code:
+  provider:
+  google_maps_flutter:
+  geolocator:
+  flutter_google_places_hoc081098:
+  google_api_headers:
+  google_maps_webservice:
+  permission_handler:
+  animated_splash_screen:
+  dio:
+  font_awesome_flutter:
+  firebase_core:
+  cloud_firestore:
+  location:
+  flutter_secure_storage:
+  flutter_timer_countdown:
+  chips_choice:
+  flutter_easyloading:
+  url_launcher:
+  toast:
+  internet_connection_checker:
+  flutter_polyline_points:
+  kf_drawer:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.10.0
 
 
   flutter_lints: ^2.0.0
 
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/Logo.png"
+
+
 flutter:
 
   uses-material-design: true
+
+  assets:
+    - assets/icon/
+    - assets/images/
+
+
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins/Poppins-Light.ttf
+        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins/Poppins-SemiBold.ttf
+        - asset: assets/fonts/Poppins/Poppins-Thin.ttf
+        - asset: assets/fonts/Poppins/Poppins-Black.ttf
+
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat/Montserrat-Bold.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Light.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Medium.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-SemiBold.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Thin.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Black.ttf
+
+    - family: Anton
+      fonts:
+        - asset: assets/fonts/Anton/Anton-Regular.ttf
