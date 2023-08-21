@@ -63,7 +63,7 @@ class _MyApp extends State<MyApp>{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.themeData,
-      title: "Go Plus",
+      title: "iMPALA",
       builder: EasyLoading.init(),
       home: AnimatedSplashScreen(
         nextScreen: FutureBuilder(
@@ -124,7 +124,7 @@ class _MyApp extends State<MyApp>{
         ),
         duration: 2500,
         splash: "assets/icon/white-text.png",
-        backgroundColor : const Color(0xFFFFD80E),
+        backgroundColor : const Color(0xFF000000),
       ),
     );
   }

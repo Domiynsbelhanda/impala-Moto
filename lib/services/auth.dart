@@ -10,7 +10,6 @@ class Auth extends ChangeNotifier{
     try {
       Dio.Response response = await dio()!.post('/v1/', data: jsonEncode(data));
       Map<String, dynamic> res = jsonDecode(response.data);
-      print()
       if(response.statusCode == 200){
         return res;
       } else {

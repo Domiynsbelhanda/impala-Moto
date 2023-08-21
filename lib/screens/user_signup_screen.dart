@@ -210,6 +210,7 @@ class _SignupScreenState extends State<UserSignupScreen> {
                                 .request(data: data)
                                 .then((value) {
                               disableLoader();
+
                               if (value['code'].toString() == '400') {
                                 notification_dialog(
                                     context,
