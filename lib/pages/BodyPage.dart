@@ -15,7 +15,6 @@ import '../utils/global_variable.dart';
 import '../widget/app_button.dart';
 
 class BodyPage extends KFDrawerContent {
-  BodyPage({Key? key});
 
   @override
   State<StatefulWidget> createState() {
@@ -88,12 +87,13 @@ class _BodyPage extends State<BodyPage> {
                   height: 48,
                   width: 48,
                   decoration: BoxDecoration(
-                      color: AppColors.primaryColor,
+                      color: AppColors.blackColor,
                       borderRadius: BorderRadius.circular(48.0)),
                   child: IconButton(
                     onPressed: widget.onMenuPressed,
                     icon: const Icon(
                       Icons.menu,
+                      color: AppColors.scaffoldColor,
                     ),
                   ),
                 ),
@@ -109,7 +109,7 @@ class _BodyPage extends State<BodyPage> {
                       destination != null ? size.width / 1.1 : size.width / 1.4,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(size.width / 15),
-                    color: AppColors.primaryColor,
+                    color: AppColors.blackColor,
                     boxShadow: [
                       BoxShadow(
                         color: Colors.grey.withOpacity(0.5),
@@ -231,18 +231,29 @@ class _BodyPage extends State<BodyPage> {
                             decoration: const BoxDecoration(
                                 border: Border(
                               bottom:
-                                  BorderSide(width: 1.0, color: Colors.black),
+                                  BorderSide(
+                                      width: 1.0,
+                                      color: AppColors.scaffoldColor
+                                  ),
                             )),
                             child: Row(
                               children: [
-                                const Icon(Icons.search),
+                                const Icon(
+                                    Icons.search,
+                                  color: AppColors.scaffoldColor,
+                                ),
                                 const SizedBox(
                                   width: 8.0,
                                 ),
                                 Flexible(
-                                  child: Text(destination != null
+                                  child: Text(
+                                      destination != null
                                       ? '${destination}'
-                                      : "Entrez votre destination"),
+                                      : "Entrez votre destination",
+                                    style: const TextStyle(
+                                      color: AppColors.scaffoldColor
+                                    ),
+                                  ),
                                 )
                               ],
                             ),
@@ -253,7 +264,7 @@ class _BodyPage extends State<BodyPage> {
                           padding: const EdgeInsets.only(
                               left: 0, top: 16.0, right: 0, bottom: 16.0),
                           child: AppButton(
-                            color: Colors.black,
+                            color: AppColors.primaryColor,
                             name: 'SUIVANT',
                             onTap: () {
                               if (destination == null) {

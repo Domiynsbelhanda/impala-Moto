@@ -145,19 +145,19 @@ class _HomePage extends State<HomePage> with TickerProviderStateMixin{
                             }
                             return BodyContent();
                           }
-                          return Center(
+                          return const Center(
                             child: SizedBox(
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
-                                children: const [
+                                children: [
                                   CircularProgressIndicator(
                                     color: AppColors.primaryColor,
                                   ),
 
                                   SizedBox(height: 16.0,),
 
-                                  const Text('Chargement...'),
+                                  Text('Chargement...'),
                                 ],
                               ),
                             ),
@@ -185,12 +185,12 @@ class _HomePage extends State<HomePage> with TickerProviderStateMixin{
                                             position = LatLng(location.data!.latitude, location.data!.longitude);
                                             return BodyContent();
                                           } else {
-                                            return Center(
+                                            return const Center(
                                               child: SizedBox(
                                                 child: Column(
                                                   mainAxisAlignment: MainAxisAlignment.center,
                                                   crossAxisAlignment: CrossAxisAlignment.center,
-                                                  children: const [
+                                                  children: [
                                                     CircularProgressIndicator(
                                                       color: AppColors.primaryColor,
                                                     ),
